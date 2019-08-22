@@ -3,9 +3,9 @@
 #PBS -l nodes=1:ppn=1
 #PBS -M dean.pettinga@vai.org
 #PBS -m ae
-#PBS -N snake_ChIP
-#PBS -o logs/snake_ChIP.o
-#PBS -e logs/snake_ChIP.e
+#PBS -N chipseq_workflow
+#PBS -o logs/chipseq_workflow.o
+#PBS -e logs/chipseq_workflow.e
 
 cd ${PBS_O_WORKDIR}
 # save DAG job file with time stamp
@@ -21,5 +21,5 @@ snakemake \
 --use-conda \
 
 # generate report
-snakemake \--report runs/snake_ChIP_${TIME}.html
+snakemake \--report runs/chipseq_workflow_${TIME}.html
 # -o {cluster.std_oe}
