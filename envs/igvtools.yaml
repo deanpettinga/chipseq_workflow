@@ -1,0 +1,4 @@
+channels:
+  - bioconda
+dependencies:
+  - bioconda::igvtools=2.5.3

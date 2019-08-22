@@ -1,0 +1,105 @@
+default:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "1"
+  mem: "16gb"
+  std_oe: "logs/"
+
+symlink:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "1"
+  mem: "16gb"
+  std_oe: "logs/"
+
+fastqc:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "1"
+  mem: "128gb"
+
+trim_galore_se:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "4"
+  mem: "128gb"
+
+bwa_mem:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "16"
+  mem: "250gb"
+
+bwa_mem_qc:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "12"
+  mem: "100gb"
+
+bam_to_tdf:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "1"
+  mem: "256gb"
+
+deeptools_summary:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "32"
+  mem: "256gb"
+
+deeptools_correlation:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "1"
+  mem: "256gb"
+
+deeptools_coverage:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "32"
+  mem: "256gb"
+
+deeptools_fingerprint:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "32"
+  mem: "256gb"
+
+macs2_callpeaks:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "32"
+  mem: "350gb"
+
+multiqc:
+  account: "dean.pettinga@vai.org"
+  qname: "bbc"
+  time: "10:00:00"
+  nodes: "1"
+  ppn: "1"
+  mem: "128gb"

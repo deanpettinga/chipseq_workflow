@@ -1,0 +1,5 @@
+channels:
+  - bioconda
+dependencies:
+  - bioconda::multiqc=1.7
+  - python=2.7

@@ -1,0 +1,19 @@
+# path or URL to sample sheet (TSV format, columns: sample, condition, ...)
+samples: "src/samples.txt"
+# path or URL to sequencing unit sheet (TSV format, columns: sample, unit, fq1, fq2,
+# strandedness). Units are technical replicates (e.g. lanes, or resequencing of the
+# same biological sample).If the column "strandedness" is present (which is optional),
+# can be empty or has one of these values: none, yes or reverse. none is for unstranded
+# protocols, yes an reverse follow the nomenclature used in `htseq-count --reverse`
+# which is referenced in STAR manual section 7, "Counting number of reads per gene".
+
+macs2:
+  # the mappable genome size for MACS2, parameter --gsize. mm=1.87e9 (https://github.com/taoliu/MACS)
+  # presets available for: hs, mm, ce, dm. otherwise define in sci notation (e.g. 9e7)
+  gsize: "mm"
+
+ref:
+  # the BWA index
+  index: "/primary/projects/bbc/references/mouse/indexes/mm10/bwa_gencode/mm10_gencode"
+  # gtf file
+  annotation: "/primary/projects/bbc/references/mouse/annotation/mm10/gencode/gencode.vM15.annotation.gtf"

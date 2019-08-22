@@ -1,0 +1,20 @@
+$schema: "http://json-schema.org/draft-06/schema#"
+
+description: an entry in the sample sheet
+properties:
+  sample:
+    type: string
+    description: sample identifier
+  condition:
+    type: string
+    description: type of sample: ChIP or Input
+  fq1:
+    type: string
+    description: name of fastq1 in raw_data
+  fq2:
+    type: string
+    description: name of fastq2 in raw_data
+required:
+  - sample
+  - condition
+  - fq1
